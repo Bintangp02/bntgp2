@@ -87,7 +87,7 @@ let app = express()
 const { createServer } = require ('http')
 let server = createServer(app)
 let _qr = 'invalid'
-let PORT = 7981 || 8000 || 8080
+let PORT = 7070 || 8000 || 8080
 const path = require('path')
 
 // save database every 30seconds
@@ -128,7 +128,7 @@ async function startalpha() {
     global.loadDatabase = async function loadDatabase() {
         if (global.db.READ) return new Promise((resolve) => setInterval(function() {
             (!global.db.READ ? (clearInterval(this), resolve(global.db.data == null ? global.loadDatabase() : global.db.data)) : null)
-        }, 1 * 1000))
+        }, 1 * 100))
         if (global.db.data !== null) return
         global.db.READ = true
         await global.db.read()
@@ -164,7 +164,7 @@ async function startalpha() {
         })
     }
 
-    console.log(color(figlet.textSync('Alphabot-MD', {
+    console.log(color(figlet.textSync('Bntgp02-MD', {
         font: 'Standard',
         horizontalLayout: 'default',
         vertivalLayout: 'default',
