@@ -87,7 +87,7 @@ let app = express()
 const { createServer } = require ('http')
 let server = createServer(app)
 let _qr = 'invalid'
-let PORT = 3000 || 8000 || 8080
+let PORT = 7981 || 8000 || 8080
 const path = require('path')
 
 // save database every 30seconds

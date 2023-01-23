@@ -47,5 +47,11 @@
       "recording": false,
       "autorespond": false
     }
-  }
+  },
+  "anonymous": {},
+  "store": [],
+  "RSticker": [],
+  "RImage": [],
+  "RVideo": [],
+  "RVn": []
 }
