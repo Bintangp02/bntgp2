@@ -17,4 +17,4 @@ ENV PM2_SECRET_KEY 9qlago78r4l8ths
 
 COPY . .
 
-CMD ["pm2-runtime", "zeeone.js"]
+CMD ["node", "zeeone.js"]
